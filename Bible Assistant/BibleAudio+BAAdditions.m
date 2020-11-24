@@ -39,12 +39,16 @@
 
 + (NSString *)femaleAudioURLStringWithVolume:(NSInteger)volume Chapter:(NSInteger)chapter
 {
-    return [NSString stringWithFormat:@"http://media.cathassist.org/bible/mp3/cn/female/%03d/%03d.mp3", volume+1, chapter+1];
+    return [BibleAudio maleAudioURLStringWithVolume:volume Chapter:chapter];
+
 }
 
 + (NSString *)maleAudioURLStringWithVolume:(NSInteger)volume Chapter:(NSInteger)chapter
 {
-    return [NSString stringWithFormat:@"http://media.cathassist.org/bible/mp3/cn/male/%03d/%03d.mp3", volume+1, chapter+1];
+//
+    return  [NSString stringWithFormat:@"http://res.cathassist.org/media/bible/sigao/audio/%03ld/%03ld.mp3",volume+1,chapter + 1];
+//    return [NSString stringWithFormat:@"http://media.cathassist.org/bible/mp3/cn/male/%03d/%03d.mp3", volume+1, chapter+1];
 }
+
 
 @end
