@@ -424,7 +424,7 @@
 				ORGANIZATIONNAME = nixWork;
 				TargetAttributes = {
 					5076120318CAA7460043773C = {
-						DevelopmentTeam = 8D957V42M6;
+						DevelopmentTeam = 9N2X3NEXD7;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -441,6 +441,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -701,6 +702,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9N2X3NEXD7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bible Assistant/Bible Assistant-Prefix.pch";
 				INFOPLIST_FILE = "Bible Assistant/Bible Assistant-Info.plist";
@@ -718,6 +720,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9N2X3NEXD7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bible Assistant/Bible Assistant-Prefix.pch";
 				INFOPLIST_FILE = "Bible Assistant/Bible Assistant-Info.plist";
