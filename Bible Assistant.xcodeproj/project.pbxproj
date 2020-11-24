@@ -52,6 +52,8 @@
 		50E0CFBE190CA45C0023C04B /* BAStatusHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E0CFBD190CA45C0023C04B /* BAStatusHUD.m */; };
 		50F37B9E18F8D33900F85560 /* BADownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F37B9D18F8D33900F85560 /* BADownloadManager.m */; };
 		9D57ED43204649E69C45849D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8B36E577DC4AA98689D42B /* libPods.a */; };
+		F7A91452256CC240001401EF /* SearchTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91451256CC240001401EF /* SearchTableController.m */; };
+		F7A91459256CD055001401EF /* SearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91458256CD055001401EF /* SearchResultCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +148,10 @@
 		50F37B9C18F8D33900F85560 /* BADownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADownloadManager.h; sourceTree = "<group>"; };
 		50F37B9D18F8D33900F85560 /* BADownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADownloadManager.m; sourceTree = "<group>"; };
 		8D45C30BB30F4D4EA352EFE5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F7A91450256CC240001401EF /* SearchTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableController.h; sourceTree = "<group>"; };
+		F7A91451256CC240001401EF /* SearchTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableController.m; sourceTree = "<group>"; };
+		F7A91457256CD055001401EF /* SearchResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultCell.h; sourceTree = "<group>"; };
+		F7A91458256CD055001401EF /* SearchResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultCell.m; sourceTree = "<group>"; };
 		FF8B36E577DC4AA98689D42B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -188,8 +194,12 @@
 		47E38C7218D853AE00EB2224 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				F7A91450256CC240001401EF /* SearchTableController.h */,
+				F7A91451256CC240001401EF /* SearchTableController.m */,
 				47E38C6F18D853A900EB2224 /* BASearchViewController.h */,
 				47E38C7018D853A900EB2224 /* BASearchViewController.m */,
+				F7A91457256CD055001401EF /* SearchResultCell.h */,
+				F7A91458256CD055001401EF /* SearchResultCell.m */,
 				47E38C7318D8543F00EB2224 /* BASearchResultCell.h */,
 				47E38C7418D8543F00EB2224 /* BASearchResultCell.m */,
 			);
@@ -540,6 +550,7 @@
 				5076124618CAC2D60043773C /* BABibleVolumeCell.m in Sources */,
 				5076124918CAC6060043773C /* UIColor+AppColor.m in Sources */,
 				5076121418CAA7460043773C /* main.m in Sources */,
+				F7A91459256CD055001401EF /* SearchResultCell.m in Sources */,
 				508F62B518F0366300AA3070 /* BibleAudio+BAAdditions.m in Sources */,
 				47E38C8218D98B1800EB2224 /* BALabel.m in Sources */,
 				5076125B18CB1D3F0043773C /* BABibleTextCell.m in Sources */,
@@ -551,6 +562,7 @@
 				47E38C7E18D9841000EB2224 /* UIView+BAAnimation.m in Sources */,
 				5076125518CADD410043773C /* BABibleSectionViewController.m in Sources */,
 				47E38C8518D99FAF00EB2224 /* BATextView.m in Sources */,
+				F7A91452256CC240001401EF /* SearchTableController.m in Sources */,
 				50F37B9E18F8D33900F85560 /* BADownloadManager.m in Sources */,
 				4793EEC618E4302000CBBA0C /* BABookmarkCell.m in Sources */,
 				508F62AC18F02F1500AA3070 /* BibleAudio.m in Sources */,

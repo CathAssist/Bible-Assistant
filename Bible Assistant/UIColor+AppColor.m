@@ -86,4 +86,12 @@
     return [UIColor colorWithRed:(90)/255.0 green:(200)/255.0 blue:(250)/255.0 alpha:1.0];
 }
 
++ (UIColor *)labelTextColor {
+    if (@available(iOS 13.0, *)) {
+        return UIColor.labelColor;
+    } else {
+        return  UIColor.darkTextColor;
+    }
+}
+
 @end

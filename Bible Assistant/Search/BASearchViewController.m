@@ -30,6 +30,7 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -148,16 +149,14 @@
     
     BASearchResultCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BASearchResultCell" forIndexPath:indexPath];
     
-    cell.titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleFootnote];
     cell.titleLabel.text = [NSString stringWithFormat:@"%@ %@ %@", resultDic[@"volume"], resultDic[@"chapter"] ,resultDic[@"sectionNumText"]];//resultDic[@"volume"];
     
-    cell.bibleTextView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
 
 #if 0
     cell.bibleTextView.text = resultDic[@"text"];
 #else
     NSString *text = resultDic[@"text"];
-    NSDictionary *attrs = @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleBody]};
+    NSDictionary *attrs = @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleBody],NSForegroundColorAttributeName: UIColor.labelTextColor};
     
     NSMutableAttributedString *mutableAttributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:attrs];
     
@@ -174,6 +173,10 @@
 #endif
     
     return cell;
+}
+
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+    [self.tableView reloadData];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath

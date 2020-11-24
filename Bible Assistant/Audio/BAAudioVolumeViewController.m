@@ -147,6 +147,10 @@
     
     NSDictionary *volume = self.volumes[indexPath.row];
     cell.textLabel.text = volume[@"name"];
+    if (@available(iOS 13.0, *)) {
+        cell.backgroundColor = UIColor.systemBackgroundColor;
+        cell.textLabel.textColor = UIColor.labelColor;
+    } 
     // Configure the cell...
     
     return cell;

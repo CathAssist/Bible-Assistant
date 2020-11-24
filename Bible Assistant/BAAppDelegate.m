@@ -131,6 +131,31 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    NSDateFormatter *formater = [[NSDateFormatter alloc]init];
+    formater.dateFormat = @"yyyyMMdd";
+    formater.calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
+    NSInteger dateInt = [formater stringFromDate:[NSDate date]].intValue;
+    if (dateInt > 20201210) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"建议使用天主教小助手APP，此APP以后不再维护。" preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"马上下载" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+            [application openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/tian-zhu-jiao-xiao-zhu-shou/id804717235"] options:@{} completionHandler:^(BOOL success) {
+                            
+            }];
+            
+        }]];
+        
+        [alert addAction:[UIAlertAction actionWithTitle:@"残忍拒绝" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+        }]];
+        
+        [self.window.rootViewController presentViewController:alert animated:YES completion:^{
+                    
+        }];
+
+        
+    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

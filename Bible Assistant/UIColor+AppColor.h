@@ -40,4 +40,7 @@
 
 + (UIColor *)lightBlueColor;
 
++ (UIColor *)labelTextColor;
+
+
 @end
