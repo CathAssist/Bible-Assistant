@@ -76,7 +76,7 @@
 {
     BABibleChapterCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"BABibleChapterCell" forIndexPath:indexPath];
     cell.backgroundColor = self.cellColor;
-    cell.chapterLabel.text = [NSString stringWithFormat:@"%d", indexPath.row + 1];
+    cell.chapterLabel.text = [NSString stringWithFormat:@"%ld", indexPath.row + 1];
     
     return cell;
 }

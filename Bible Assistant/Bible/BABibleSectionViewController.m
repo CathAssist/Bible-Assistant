@@ -115,14 +115,14 @@
     NSInteger volume = [self.biblelLocation[@"volume"] integerValue];
     NSInteger chapter = [self.biblelLocation[@"chapter"] integerValue];
     // 监听播放进度
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateAudioPlayProgress:) name:[NSString stringWithFormat:@"Volume%dChapter%dAudioPlayProgress", volume, chapter] object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateAudioPlayProgress:) name:[NSString stringWithFormat:@"Volume%ldChapter%ldAudioPlayProgress", (long)volume, (long)chapter] object:nil];
     
     
     if ([BAAudioPlayer isPlayingVolume:[self.biblelLocation[@"volume"] integerValue] Chapter:[self.biblelLocation[@"chapter"] integerValue]]) {
         [self.audioButton setTitle:@"暂停"];
     }
     // 监听播放状态
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateStateButtonTitle:) name:[NSString stringWithFormat:@"Volume%dChapter%dStateButtonTitle", volume, chapter] object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateStateButtonTitle:) name:[NSString stringWithFormat:@"Volume%ldChapter%ldStateButtonTitle", (long)volume, (long)chapter] object:nil];
     
     
     //监听进入后台，好记录阅读位置

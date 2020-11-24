@@ -22,6 +22,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     //[self bounceLeftWithDuration:0.5 delay:0.4];
     //[self bounceRightWithDuration:0.5 delay:0.4];
     //[self bounceDownWithDuration:0.5 delay:0.4];

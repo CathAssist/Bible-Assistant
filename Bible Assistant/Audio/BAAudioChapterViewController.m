@@ -66,14 +66,14 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(audioSexChanged:) name:@"audioSexChanged" object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(audioDownloadProgress:)
-                                                 name:[NSString stringWithFormat:@"Volume%dAudioDownloadProgressNotification", [self.volume[@"index"] integerValue]]
+                                                 name:[NSString stringWithFormat:@"Volume%ldAudioDownloadProgressNotification", (long)[self.volume[@"index"] integerValue]]
                                                object:nil];
 }
 
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"audioSexChanged" object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:[NSString stringWithFormat:@"Volume%dAudioDownloadProgressNotification", [self.volume[@"index"] integerValue]] object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:[NSString stringWithFormat:@"Volume%ldAudioDownloadProgressNotification", (long)[self.volume[@"index"] integerValue]] object:nil];
 }
 
 - (void)audioDownloadProgress:(NSNotification *)notification
@@ -293,7 +293,7 @@
 {
     BAAudioChapterCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BAAudioChapterCell" forIndexPath:indexPath];
     
-    cell.chapterLabel.text = [NSString stringWithFormat:@"第%d章", indexPath.row + 1];
+    cell.chapterLabel.text = [NSString stringWithFormat:@"第%ld章", indexPath.row + 1];
     
     NSMutableDictionary *chapter = self.chapters[indexPath.row];
     

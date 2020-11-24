@@ -100,7 +100,7 @@ const float UI_CUES_WIDTH = 80.0f;
         CGPoint translation = [gestureRecognizer translationInView:[self superview]];
         
         // Check for horizontal gesture
-        if (fabsf(translation.x) > fabsf(translation.y)) {
+        if (fabs(translation.x) > fabs(translation.y)) {
             return YES;
         }
     }
@@ -134,7 +134,7 @@ const float UI_CUES_WIDTH = 80.0f;
         _rightOnDragRelease = self.frame.origin.x < -self.frame.size.width / 3;
         
         // fade the contextual cues
-        float cueAlpha = fabsf(self.frame.origin.x) / (self.frame.size.width / 4);
+        float cueAlpha = fabs(self.frame.origin.x) / (self.frame.size.width / 4);
         [self setCueAlpha:cueAlpha];
         
         // indicate when the item have been pulled far enough to invoke the given action
