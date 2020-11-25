@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		232E4A360AA2D91766817C2B /* Pods_Bible_Assistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79A6CD3A621218164A8D110 /* Pods_Bible_Assistant.framework */; };
 		4793EEB918E3BF0500CBBA0C /* BAModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4793EEB718E3BF0500CBBA0C /* BAModel.xcdatamodeld */; };
 		4793EEC218E4019700CBBA0C /* BABookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4793EEC118E4019700CBBA0C /* BABookmarksViewController.m */; };
 		4793EEC618E4302000CBBA0C /* BABookmarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4793EEC518E4302000CBBA0C /* BABookmarkCell.m */; };
@@ -51,7 +52,6 @@
 		508F62B518F0366300AA3070 /* BibleAudio+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 508F62B418F0366300AA3070 /* BibleAudio+BAAdditions.m */; };
 		50E0CFBE190CA45C0023C04B /* BAStatusHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E0CFBD190CA45C0023C04B /* BAStatusHUD.m */; };
 		50F37B9E18F8D33900F85560 /* BADownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F37B9D18F8D33900F85560 /* BADownloadManager.m */; };
-		9D57ED43204649E69C45849D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8B36E577DC4AA98689D42B /* libPods.a */; };
 		F7A91452256CC240001401EF /* SearchTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91451256CC240001401EF /* SearchTableController.m */; };
 		F7A91459256CD055001401EF /* SearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A91458256CD055001401EF /* SearchResultCell.m */; };
 /* End PBXBuildFile section */
@@ -147,12 +147,13 @@
 		50E0CFBD190CA45C0023C04B /* BAStatusHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAStatusHUD.m; sourceTree = "<group>"; };
 		50F37B9C18F8D33900F85560 /* BADownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADownloadManager.h; sourceTree = "<group>"; };
 		50F37B9D18F8D33900F85560 /* BADownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADownloadManager.m; sourceTree = "<group>"; };
-		8D45C30BB30F4D4EA352EFE5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6885979273857F05EF125B40 /* Pods-Bible Assistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bible Assistant.release.xcconfig"; path = "Target Support Files/Pods-Bible Assistant/Pods-Bible Assistant.release.xcconfig"; sourceTree = "<group>"; };
+		A08861565BBC422669245713 /* Pods-Bible Assistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bible Assistant.debug.xcconfig"; path = "Target Support Files/Pods-Bible Assistant/Pods-Bible Assistant.debug.xcconfig"; sourceTree = "<group>"; };
+		C79A6CD3A621218164A8D110 /* Pods_Bible_Assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bible_Assistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A91450256CC240001401EF /* SearchTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableController.h; sourceTree = "<group>"; };
 		F7A91451256CC240001401EF /* SearchTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableController.m; sourceTree = "<group>"; };
 		F7A91457256CD055001401EF /* SearchResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultCell.h; sourceTree = "<group>"; };
 		F7A91458256CD055001401EF /* SearchResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultCell.m; sourceTree = "<group>"; };
-		FF8B36E577DC4AA98689D42B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +164,7 @@
 				5076120A18CAA7460043773C /* CoreGraphics.framework in Frameworks */,
 				5076120C18CAA7460043773C /* UIKit.framework in Frameworks */,
 				5076120818CAA7460043773C /* Foundation.framework in Frameworks */,
-				9D57ED43204649E69C45849D /* libPods.a in Frameworks */,
+				232E4A360AA2D91766817C2B /* Pods_Bible_Assistant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +229,7 @@
 				5076122F18CAA7470043773C /* Bible AssistantTests */,
 				5076120618CAA7460043773C /* Frameworks */,
 				5076120518CAA7460043773C /* Products */,
-				8D45C30BB30F4D4EA352EFE5 /* Pods.xcconfig */,
+				A5BDAD6950E44A755E2A36B1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -248,7 +249,7 @@
 				5076120918CAA7460043773C /* CoreGraphics.framework */,
 				5076120B18CAA7460043773C /* UIKit.framework */,
 				5076122918CAA7470043773C /* XCTest.framework */,
-				FF8B36E577DC4AA98689D42B /* libPods.a */,
+				C79A6CD3A621218164A8D110 /* Pods_Bible_Assistant.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -382,6 +383,16 @@
 			name = "Core Data";
 			sourceTree = "<group>";
 		};
+		A5BDAD6950E44A755E2A36B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A08861565BBC422669245713 /* Pods-Bible Assistant.debug.xcconfig */,
+				6885979273857F05EF125B40 /* Pods-Bible Assistant.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -389,12 +400,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5076123918CAA7470043773C /* Build configuration list for PBXNativeTarget "Bible Assistant" */;
 			buildPhases = (
-				682DB8B213AE4D60BC731404 /* Check Pods Manifest.lock */,
+				1C49B11F93A53418526BF95A /* [CP] Check Pods Manifest.lock */,
 				5076120018CAA7460043773C /* Sources */,
 				5076120118CAA7460043773C /* Frameworks */,
 				5076120218CAA7460043773C /* Resources */,
-				0BB6D27E5DC245DA85A79FF0 /* Copy Pods Resources */,
 				501C565918FACE4F0098937E /* ShellScript */,
+				F715786D062B8DE152B190BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -490,19 +501,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BB6D27E5DC245DA85A79FF0 /* Copy Pods Resources */ = {
+		1C49B11F93A53418526BF95A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bible Assistant-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		501C565918FACE4F0098937E /* ShellScript */ = {
@@ -518,19 +536,32 @@
 			shellPath = /bin/sh;
 			shellScript = "TAGS=\"TODO|FIXME\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
 		};
-		682DB8B213AE4D60BC731404 /* Check Pods Manifest.lock */ = {
+		F715786D062B8DE152B190BB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bible Assistant/Pods-Bible Assistant-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FFCircularProgressView/FFCircularProgressView.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
+				"${BUILT_PRODUCTS_DIR}/Ono/Ono.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SGNavigationProgress/SGNavigationProgress.framework",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFCircularProgressView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ono.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGNavigationProgress.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bible Assistant/Pods-Bible Assistant-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -708,7 +739,7 @@
 		};
 		5076123A18CAA7470043773C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D45C30BB30F4D4EA352EFE5 /* Pods.xcconfig */;
+			baseConfigurationReference = A08861565BBC422669245713 /* Pods-Bible Assistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -729,7 +760,7 @@
 		};
 		5076123B18CAA7470043773C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D45C30BB30F4D4EA352EFE5 /* Pods.xcconfig */;
+			baseConfigurationReference = 6885979273857F05EF125B40 /* Pods-Bible Assistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
