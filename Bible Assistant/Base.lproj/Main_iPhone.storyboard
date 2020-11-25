@@ -639,7 +639,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPN-r1-JJa">
-                                <rect key="frame" x="217" y="762" width="87" height="33"/>
+                                <rect key="frame" x="307" y="762" width="87" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="随机下一条">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -693,9 +693,9 @@
                             <constraint firstItem="JMU-O8-ElU" firstAttribute="top" secondItem="bni-0S-PaC" secondAttribute="bottom" constant="25" id="csB-lV-zBM"/>
                             <constraint firstItem="JMU-O8-ElU" firstAttribute="leading" secondItem="aAF-sh-vr0" secondAttribute="leading" constant="20" id="igq-Dx-1E6"/>
                             <constraint firstItem="bni-0S-PaC" firstAttribute="leading" secondItem="aAF-sh-vr0" secondAttribute="leading" constant="20" id="jmr-os-enL"/>
-                            <constraint firstAttribute="trailing" secondItem="LPN-r1-JJa" secondAttribute="trailing" constant="110" id="kYt-aw-Hj7"/>
+                            <constraint firstAttribute="trailing" secondItem="LPN-r1-JJa" secondAttribute="trailing" constant="20" id="kYt-aw-Hj7"/>
                             <constraint firstAttribute="trailing" secondItem="bni-0S-PaC" secondAttribute="trailing" constant="20" id="xdX-eJ-e59"/>
-                            <constraint firstItem="LPN-r1-JJa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JMU-O8-ElU" secondAttribute="trailing" symbolic="YES" id="yX1-Wy-5PD"/>
+                            <constraint firstItem="LPN-r1-JJa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JMU-O8-ElU" secondAttribute="trailing" constant="8" symbolic="YES" id="yX1-Wy-5PD"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="金句" image="leaf" id="5xg-SO-x6S"/>
