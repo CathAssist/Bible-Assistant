@@ -52,9 +52,9 @@
 {
     _isPlaying = isPlaying;
     if (_isPlaying) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"Volume%dChapter%dStateButtonTitle", [self.volumeNum integerValue], [self.chapterNum integerValue]] object:nil userInfo:@{@"buttonTitle":@"暂停"}];
+        [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"Volume%ldChapter%ldStateButtonTitle", [self.volumeNum integerValue], [self.chapterNum integerValue]] object:nil userInfo:@{@"buttonTitle":@"暂停"}];
     } else {
-        [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"Volume%dChapter%dStateButtonTitle", [self.volumeNum integerValue], [self.chapterNum integerValue]] object:nil userInfo:@{@"buttonTitle":@"播放"}];
+        [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"Volume%ldChapter%ldStateButtonTitle", [self.volumeNum integerValue], [self.chapterNum integerValue]] object:nil userInfo:@{@"buttonTitle":@"播放"}];
     }
 }
 
@@ -360,7 +360,7 @@
     float progress = self.localSongPlayer.currentTime / total;
     
     //[self.navigationController setSGProgressPercentage:progress*100.0];
-    [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"Volume%dChapter%dAudioPlayProgress", [self.volumeNum integerValue], [self.chapterNum integerValue]] object:nil userInfo:@{@"progress":@(progress)}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"Volume%ldChapter%ldAudioPlayProgress", [self.volumeNum integerValue], [self.chapterNum integerValue]] object:nil userInfo:@{@"progress":@(progress)}];
 
     //NSLog(@"+lp %@,%@, %f",self.volumeNum, self.chapterNum ,progress);
 }
@@ -374,7 +374,7 @@
     
     if (progress < 1.0) {
         //[self.navigationController setSGProgressPercentage:progress*100.0];
-        [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"Volume%dChapter%dAudioPlayProgress", [self.volumeNum integerValue], [self.chapterNum integerValue]] object:nil userInfo:@{@"progress":@(progress)}];
+        [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"Volume%ldChapter%ldAudioPlayProgress", [self.volumeNum integerValue], [self.chapterNum integerValue]] object:nil userInfo:@{@"progress":@(progress)}];
     }
     //NSLog(@"+op %@,%@, %f",self.volumeNum, self.chapterNum ,progress);
 }
@@ -385,7 +385,7 @@
     [self.onlinePlaybackTimer invalidate];
     
     //进度条达到100%（手动确保到100%好让它自己消失）
-    [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"Volume%dChapter%dAudioPlayProgress", [self.volumeNum integerValue], [self.chapterNum integerValue]] object:nil userInfo:@{@"progress":@(1.0)}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"Volume%ldChapter%ldAudioPlayProgress", [self.volumeNum integerValue], [self.chapterNum integerValue]] object:nil userInfo:@{@"progress":@(1.0)}];
 
     self.isPlaying = NO;
     
